@@ -32,7 +32,7 @@ export default async function Home() {
                     <Link href="#gallery" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
                       🖼️ 作品ギャラリー
                     </Link>
-                    <Link href="#diary" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+                    <Link href="/blog" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
                       📝 ブログ
                     </Link>
                     <Link href="#about" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
@@ -69,6 +69,9 @@ export default async function Home() {
                 <a href="#gallery" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg hover-glow">
                   作品を見る 🎨
                 </a>
+                <Link href="/blog" className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg hover-glow">
+                  ブログを読む 📝
+                </Link>
                 <a href="#about" className="bg-white hover:bg-gray-50 text-orange-500 border-2 border-orange-500 px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all shadow-lg hover-glow">
                   らーめん太郎について 🍞
                 </a>
