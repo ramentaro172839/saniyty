@@ -57,24 +57,6 @@ export default async function BlogPage() {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
               📝 らーめん太郎の<span className="text-orange-500">ブログ</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              HamCupコミュニティでの活動や日々の創作活動、<br />
-              パン愛好家としての日常をお届けします 🍞✨
-            </p>
-            <div className="bg-white rounded-2xl p-8 shadow-lg mb-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
-                <div>
-                  <div className="text-3xl mb-2">🎨</div>
-                  <h3 className="font-bold text-orange-600 mb-1">創作記録</h3>
-                  <p className="text-sm text-gray-600">イラスト制作の過程や想い</p>
-                </div>
-                <div>
-                  <div className="text-3xl mb-2">🎙️</div>
-                  <h3 className="font-bold text-red-500 mb-1">配信レポート</h3>
-                  <p className="text-sm text-gray-600">音声配信での出来事</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
