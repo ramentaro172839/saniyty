@@ -14,11 +14,33 @@ export default async function Home() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-orange-600">🎨 らーめん太郎</h1>
-            <div className="flex space-x-6">
-              <Link href="/" className="text-gray-700 hover:text-orange-600 transition-colors">ホーム</Link>
-              <Link href="#gallery" className="text-gray-700 hover:text-orange-600 transition-colors">作品ギャラリー</Link>
-              <Link href="#diary" className="text-gray-700 hover:text-orange-600 transition-colors">日記</Link>
-              <Link href="#about" className="text-gray-700 hover:text-orange-600 transition-colors">らーめん太郎について</Link>
+            <div className="flex items-center space-x-6">
+              {/* ハンバーガーメニュー */}
+              <div className="relative group">
+                <button className="flex flex-col space-y-1 p-2 hover:bg-orange-50 rounded-md transition-colors">
+                  <div className="w-6 h-0.5 bg-gray-700 group-hover:bg-orange-600 transition-colors"></div>
+                  <div className="w-6 h-0.5 bg-gray-700 group-hover:bg-orange-600 transition-colors"></div>
+                  <div className="w-6 h-0.5 bg-gray-700 group-hover:bg-orange-600 transition-colors"></div>
+                </button>
+                
+                {/* ドロップダウンメニュー */}
+                <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-lg border border-orange-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+                  <div className="py-2">
+                    <Link href="/" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+                      🏠 ホーム
+                    </Link>
+                    <Link href="#gallery" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+                      🖼️ 作品ギャラリー
+                    </Link>
+                    <Link href="#diary" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+                      📝 ブログ
+                    </Link>
+                    <Link href="#about" className="block px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 transition-colors">
+                      🎨 らーめん太郎について
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -99,7 +121,7 @@ export default async function Home() {
       <section id="diary" className="py-20">
         <div className="container mx-auto px-4">
           <h3 className="text-4xl font-bold text-center text-gray-800 mb-4">
-            📝 らーめん太郎の日記
+            📝 らーめん太郎のブログ
           </h3>
           <p className="text-xl text-gray-600 text-center mb-16">
             創作活動や日々の出来事をお伝えします
@@ -115,7 +137,7 @@ export default async function Home() {
             <div className="text-center bg-white rounded-2xl p-12 shadow-lg">
               <div className="text-6xl mb-4">📝</div>
               <p className="text-xl text-gray-600 mb-6">
-                まだ日記を書いていません
+                まだブログを書いていません
               </p>
               <p className="text-gray-500">
                 近日中に、らーめん太郎の日常や創作活動の様子をお届け予定です。<br />
